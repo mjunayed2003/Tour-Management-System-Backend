@@ -31,7 +31,7 @@ router.patch(
 router.delete("/tour-types/:id", checkAuth(Role.ADMIN, Role.SUPER_ADMIN), TourController.deleteTourType);
 
 /* --------------------- TOUR ROUTES ---------------------- */
-router.get("/", TourController.getAllTours);
+router.get("/all-tours", TourController.getAllTours);
 
 router.post(
     "/create",
