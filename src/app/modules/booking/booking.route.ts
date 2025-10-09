@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { checkAuth } from "../../middlewares/checkAuth";
-import { Role } from "../user/user.interface";
 import { validateRequest } from "../../middlewares/validateRequest";
-import { createBookingZodSchema } from "./booking.validation";
+import { Role } from "../user/user.interface";
 import { BookingController } from "./booking.controller";
+import { createBookingZodSchema } from "./booking.validation";
 
 
 const router = Router();
